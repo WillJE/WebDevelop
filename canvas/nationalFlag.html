@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>五星红旗</title>  
+    <style type="text/css">  
+        #canvas{  
+            display: block;  
+            margin: 50px auto;  
+            box-shadow: 4px 4px 5px #8e8e8e;  
+            -webkit-box-shadow: 8px 8px 5px #8e8e8e;  
+        }  
+    </style>  
+</head>  
+<body>  
+<canvas id="canvas"></canvas>  
+  
+<script>  
+    window.onload = function () {  
+        var canvas = document.getElementById("canvas");  
+        canvas.width = 288;  
+        canvas.height = 192;  
+  
+        var context = canvas.getContext("2d")  
+  
+        //绘制背景  
+        context.beginPath();  
+        context.rect(0, 0, 288, 192);  
+        context.closePath();  
+  
+        context.fillStyle = "red";  
+        context.fill();  
+  
+  
+        drawStar(context, 12, 30, 48, 48, 0);//大星星  
+  
+  
+        //四个小星星  
+        drawStar(context, 4, 10, 96, 19,18);  
+  
+        drawStar(context, 4, 10, 115, 38, 126);  
+  
+        drawStar(context, 4, 10, 115, 68, 72);  
+  
+        drawStar(context, 4, 10, 96, 96, 180);  
+  
+  
+  
+    }  
+  
+  
+    function drawStar(ctx,r,R,x,y,rote) { //绘制星星的路径  
+  
+        ctx.beginPath();//开始路径  
+  
+        for(var i = 0 ;i<5 ;i++) {  
+            ctx.lineTo(Math.cos((18 + i * 72 - rote) / 180 * Math.PI) * R + x,  
+                    -Math.sin((18 + i * 72 - rote) / 180 * Math.PI) * R + y);  
+  
+            ctx.lineTo(Math.cos((54 + i * 72 -rote) / 180 * Math.PI) * r + x,  
+                    -Math.sin((54 + i * 72 - rote) / 180 * Math.PI) * r + y);  
+  
+        }  
+  
+        ctx.closePath()//结束路径  
+  
+        ctx.fillStyle = "yellow";  
+        ctx.fill();  
+  
+  
+    }  
+  
+</script>  
+</body>  
+</html>  

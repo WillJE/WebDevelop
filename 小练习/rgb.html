@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select RGB Color</title>
+	<style type="text/css">
+		.color-container{
+			background-color: rgb(130, 53, 91);
+			/*width:300px;*/
+			height: 80px;
+			text-align: center;
+			line-height: 80px;
+			margin: 20px auto;
+			background-color: rgb(100,100,100);
+		}
+		.color-container #rgbResultText{
+			text-align: center;
+			line-height: 80px;
+			color: black;
+			font-size: 30px;
+		}
+		.range-container{
+			border: solid 1px black;
+			margin: 20px;
+			padding: 10px;
+			display: flex;
+		}
+		.rangeClass{
+			flex: 1 0 0;
+		}
+		.rangeClass p {
+			/*text-align: center;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="color-container" id="colorContainer" onchange="colorChange()">
+		<p id="rgbResultText" style="color: rgb();"></p>
+	</div>
+	
+	<div class="range-container">
+		<div class="rangeClass">
+			<p>Red</p>
+			<input type="range" id="redRange" onchange="colorChange()" min="0" max="255" value="255">
+			<p id="redValue"></p>
+		</div>
+		<div class="rangeClass">
+			<p>Green</p>
+			<input type="range" id="greenRange" onchange="colorChange()" min="0" max="255" value="255" class="rangeClass">
+			<p id="greenValue"></p>
+		</div>
+		<div class="rangeClass">
+			<p>Blue</p>
+			<input type="range" id="blueRange" onchange="colorChange()" min="0" max="255" value="255" class="rangeClass">
+			<p id="blueValue"></p>
+		</div>
+	</div>
+	
+	
+</body>
+<script>
+	var r,g,b,col;
+	var r = document.getElementById('redRange').value;
+	var g = document.getElementById('greenRange').value;
+	var b = document.getElementById('blueRange').value;
+	var rgbResultText = document.getElementById('rgbResultText');
+	var colorContainer = document.getElementById('colorContainer');
+	
+
+
+	function colorChange() {
+		var r = document.getElementById('redRange').value;
+		var g = document.getElementById('greenRange').value;
+		var b = document.getElementById('blueRange').value;
+		document.getElementById('redValue').innerText = r;
+		document.getElementById('greenValue').innerText = g;
+		document.getElementById('blueValue').innerText = b;
+		col = "rgb(" + r + "," + g + "," + b + ")";
+		rgbResultText.innerHTML = col;
+		colorContainer.style.backgroundColor = col;
+	}
+</script>
+</html>
