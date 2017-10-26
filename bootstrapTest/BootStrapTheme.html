@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fix-top">
+      <div class="container">
+        <div class="nvabar-header">
+          <a href="" class="navbar-brand">Bootstrap Theme</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="">Action</a></li>
+                <li><a href="">Another action</a></li>
+                <li><a href="">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="">Separated link</a></li>
+                <li><a href="">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container theme-showcase">
+      <div class="jumbotron">
+        <h1>Theme Example</h1>
+        <p>
+          This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+        </p>
+      </div>
+      <div class="page-header">
+        <h1>Buttons</h1>
+      </div>
+      <!-- 
+      xs = extra small screens (mobile phones)
+      sm = small screens (tablets)
+      md = medium screens (some desktops)
+      lg = large screens (remaining desktops) -->
+      <p>
+        <button class="btn btn-lg btn-default" type="button">Default</button>
+        <button class="btn btn-lg btn-primary" type="button">Primary</button>
+        <button class="btn btn-lg btn-success" type="button">Success</button>
+        <button class="btn btn-lg btn-info" type="button">Info</button>
+        <button class="btn btn-lg btn-warning" type="button">Warning</button>
+        <button class="btn btn-lg btn-danger" type="button">Danger</button>
+        <button class="btn btn-lg btn-link" type="button">Link</button>
+      </p>
+      <p>
+        <button class="btn btn-md btn-default" type="button">Default</button>
+        <button class="btn btn-md btn-primary" type="button">Primary</button>
+        <button class="btn btn-md btn-success" type="button">Success</button>
+        <button class="btn btn-md btn-info" type="button">Info</button>
+        <button class="btn btn-md btn-warning" type="button">Warning</button>
+        <button class="btn btn-md btn-danger" type="button">Danger</button>
+        <button class="btn btn-md btn-link" type="button">Link</button>
+      </p>
+      <p>
+        <button class="btn btn-sm btn-default" type="button">Default</button>
+        <button class="btn btn-sm btn-primary" type="button">Primary</button>
+        <button class="btn btn-sm btn-success" type="button">Success</button>
+        <button class="btn btn-sm btn-info" type="button">Info</button>
+        <button class="btn btn-sm btn-warning" type="button">Warning</button>
+        <button class="btn btn-sm btn-danger" type="button">Danger</button>
+        <button class="btn btn-sm btn-link" type="button">Link</button>
+      </p>
+      <p>
+        <button class="btn btn-xs btn-default" type="button">Default</button>
+        <button class="btn btn-xs btn-primary" type="button">Primary</button>
+        <button class="btn btn-xs btn-success" type="button">Success</button>
+        <button class="btn btn-xs btn-info" type="button">Info</button>
+        <button class="btn btn-xs btn-warning" type="button">Warning</button>
+        <button class="btn btn-xs btn-danger" type="button">Danger</button>
+        <button class="btn btn-xs btn-link" type="button">Link</button>
+      </p>
+      <div class="page-header">
+        <h1>Tables</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>User Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>Mark</th>
+                <th>Otto</th>
+                <th>@mdo</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>Jacob</th>
+                <th>Thornton</th>
+                <th>@fat</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>Larry</th>
+                <th>the bird</th>
+                <th>@twitter</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>User Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>Mark</th>
+                <th>Otto</th>
+                <th>@mdo</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>Jacob</th>
+                <th>Thornton</th>
+                <th>@fat</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>Larry</th>
+                <th>the bird</th>
+                <th>@twitter</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>User Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>Mark</th>
+                <th>Otto</th>
+                <th>@mdo</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>Jacob</th>
+                <th>Thornton</th>
+                <th>@fat</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>Larry</th>
+                <th>the bird</th>
+                <th>@twitter</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>User Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>Mark</th>
+                <th>Otto</th>
+                <th>@mdo</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>Jacob</th>
+                <th>Thornton</th>
+                <th>@fat</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>Larry</th>
+                <th>the bird</th>
+                <th>@twitter</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="page-header">
+        <h1>Thumbnails</h1>
+      </div>
+      <img src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
+      <div class="page-header">
+        <h1>Labels</h1>
+      </div>
+      <h1>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h1>
+      <h2>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h2>
+      <h3>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h3>
+      <h4>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h4>
+      <h5>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h5>
+      <h6>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h6>
+      <p>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </p>
+      <div class="page-header">
+        <h1>Bages</h1>
+      </div>
+      <p>
+        <a href="#">Inbox<span class="badge">42</span></a>
+      </p>
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home<span class="badge">42</span></a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Message<span class="badge">42</span></a></li>
+      </ul>
+      <div class="page-header">
+      <h1>Navs</h1>
+      </div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Message</a></li>
+      </ul>
+      <hr>
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Message</a></li>
+      </ul>
+
+      <div class="page-header">
+        <h1>Alerts</h1>
+      </div>
+      <div class="alert alert-success">
+        <strong>Well done!</strong>You successully read this important message.
+      </div>
+      <div class="alert alert-info">
+        <strong>Heads up!</strong>This alert needs your attention, but it's not super important.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong>Best check yo self, you're not looking too good.
+      </div>
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
+
+      <div class="page-header">
+        <h1>Progress bars</h1>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" style="width: 60%"><span class="sr-only">60% complete</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" style="width: 40%"><span class="sr-only">60% complete (info)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 40%"><span class="sr-only">60% complete (success)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" style="width: 40%"><span class="sr-only">60% complete (danger)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" style="width: 40%"><span class="sr-only">60% complete (warning)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width: 60%"><span class="sr-only">60% complete (warning)</span></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width: 20%"><span class="sr-only">60% complete (warning)</span></div>
+        <div class="progress-bar progress-bar-warning" style="width: 30%"><span class="sr-only">60% complete (warning)</span></div>
+        <div class="progress-bar progress-bar-success" style="width: 40%"><span class="sr-only">60% complete (success)</span></div>
+      </div>
+
+      <div class="page-header">
+        <h1>List groups</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item">Aliquam molestie</li>
+            <li class="list-group-item">Donec sit amet</li>
+            <li class="list-group-item">condimentum scelerisque</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item active">Aliquam molestie</li>
+            <li class="list-group-item">Donec sit amet</li>
+            <li class="list-group-item">condimentum scelerisque</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="list-group">
+          <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Nullam pellentesque consequat sem in molestie. Curabitur vehicula ultricies purus, non imperdiet libero egestas sed. Curabitur aliquam mattis metus ullamcorper auctor. </p>
+          </a>
+          <a href="" class="list-group-item">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Aliquam molestie lacinia porttitor. Donec sit amet urna id dolor efficitur posuere. Sed suscipit erat et maximus eleifend. Fusce posuere vehicula sem in pellentesque. </p>
+          </a>
+          <a href="" class="list-group-item">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Pellentesque nec elit eget elit condimentum scelerisque. Phasellus at consectetur urna. Maecenas venenatis tincidunt finibus.</p>
+          </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <h1>Panels</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>Panel heading</h3>
+            </div>
+            <div class="panel-body">
+              Panel body
+            </div>
+            <div class="panel-body">
+              Panel body2
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3>Panel heading</h3>
+            </div>
+            <div class="panel-body">
+              Panel body
+            </div>
+            <div class="panel-body">
+              Panel body2
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3>Panel heading</h3>
+            </div>
+            <div class="panel-body">
+              Panel body
+            </div>
+            <div class="panel-body">
+              Panel body2
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3>Panel heading</h3>
+            </div>
+            <div class="panel-body">
+              Panel body
+            </div>
+            <div class="panel-body">
+              Panel body2
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3>Panel heading</h3>
+            </div>
+            <div class="panel-body">
+              Panel body
+            </div>
+            <div class="panel-body">
+              Panel body2
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3>Panel heading</h3>
+            </div>
+            <div class="panel-body">
+              Panel body
+            </div>
+            <div class="panel-body">
+              Panel body2
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <h1>Wells</h1>
+      </div>
+      <div class="well">
+        Nullam pellentesque consequat sem in molestie. Curabitur vehicula ultricies purus, non imperdiet libero egestas sed. Curabitur aliquam mattis metus ullamcorper auctor. Mauris lacinia dapibus nunc, non dapibus libero. Nullam tincidunt eleifend tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sed congue ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ut sapien interdum, pharetra arcu vitae, fermentum diam.
+      </div>
+
+      <div class="page-header">
+        <h1>Carousel</h1>
+      </div>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
+          </div>
+          <div class="item">
+            <img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
+          </div>
+          <div class="item">
+            <img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My contacts</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+		<div class="container">
+			<div class="header clearfix">
+				<h3 class="text-muted">FileterList</h3>
+			</div>
+			<div class="page-header">
+				<input type="text" placeholder="Searching names...." class="form-control" id="filterInput">
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+				  <div class="panel panel-default">
+				  	<div class="panel-heading">
+				  		<h3 class="title">A</h3>
+				  	</div>
+				  	<div class="panel-body">
+				  		Aadm
+				  	</div>
+				  	<div class="panel-body">
+				  		Alice
+				  	</div>
+				  	<div class="panel-body">
+				  		Anna
+				  	</div>
+				  </div>
+				</div>
+				<div class="col-sm-12">
+				  <div class="panel panel-default">
+				  	<div class="panel-heading">
+				  		<h3 class="title">B</h3>
+				  	</div>
+				  	<div class="panel-body">
+				  		Brad
+				  	</div>
+				  	<div class="panel-body">
+				  		Beth
+				  	</div>
+				  	<div class="panel-body">
+				  		Bob
+				  	</div>
+				  </div>
+				</div>
+				<div class="col-sm-12">
+				  <div class="panel panel-default">
+				  	<div class="panel-heading">
+				  		<h3 class="title">C</h3>
+				  	</div>
+				  	<div class="panel-body">
+				  		Carrie
+				  	</div>
+				  	<div class="panel-body">
+				  		Cathy
+				  	</div>
+				  	<div class="panel-body">
+				  		Courtney
+				  	</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+<script>
+	var filterInput = document.getElementById('filterInput');
+	filterInput.addEventListener('keyup', filterNames);
+
+	function filterNames(){
+		var filterInput = document.getElementById('filterInput');
+		var filterValue = filterInput.value.toUpperCase();
+		var matches = document.querySelectorAll("div.panel-body");
+		for (var i = 0; i < matches.length; i++) {
+			// var value = matches[i].value;
+			// console.log(matches[i].innerHTML);
+			if (matches[i].innerText.toUpperCase().indexOf(filterValue)>-1) {
+				matches[i].style.display = '';
+			}else{
+				matches[i].style.display = 'none';
+			}
+		}
+	}
+</script>
+</body>
+</html>

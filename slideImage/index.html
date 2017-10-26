@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Image</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<div id="arrow-left" class="arrow">
+			
+		</div>
+		<div id="slider">
+			<div class="slide slide1">
+				<div class="slide-content">
+					<span>ImageOne</span>
+				</div>
+			</div>
+			<div class="slide slide2">
+				<div class="slide-content">
+					<span>ImageTwo</span>
+				</div>
+			</div>
+			<div class="slide slide3">
+				<div class="slide-content">
+					<span>ImageThree</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="arrow-right" class="arrow">
+			
+		</div>
+	</div>
+	<script>
+		let slideImages = document.querySelectorAll(".slide"),
+		 	slideLeft = document.querySelector("#arrow-left"),
+		 	slideRight = document.querySelector("#arrow-right"),
+		 	current = 0;
+
+		function reset () {
+			for(let i = 0 ; i < slideImages.length; i++){
+				slideImages[i].style.display = "none";
+			}
+		}
+
+		function startSlide () {
+			reset();
+			slideImages[0].style.display = "block";
+		}
+		slideLeft.addEventListener("click", function () {
+			if ( current === 0) {
+				current = slideImages.length;
+			}
+			console.log(current);
+			slideToLeft();
+		});
+
+		function slideToLeft () {
+			reset();
+			slideImages[current - 1].style.display = "block";
+			current--;
+		}
+
+		function slideToRight () {
+			reset();
+			// alert(slideImages.length)
+			slideImages[current + 1].style.display = "block";
+			current++;
+		}
+
+		slideRight.addEventListener("click", function () {
+			if( current === slideImages.length - 1){
+				current = -1;
+			}
+			console.log(current);
+			slideToRight();
+		});
+		startSlide();
+
+	</script>
+</body>
+</html>
