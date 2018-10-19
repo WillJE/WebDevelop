@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Relative详解</title>
+</head>
+<style>
+    .first{
+        width:200px;
+        height: 100px;
+        border: 1px solid red;
+        /* margin: 20px; */
+        padding:20px;
+        position: relative;
+        left:20px;
+        top: 20px;
+        bottom:50px;
+        right: 50px;
+    }
+    .second{
+        width:200px;
+        height: 100px;
+        border: 1px solid blue;
+    }
+    .firstMove{
+        width:200px;
+        height: 100px;
+        border: 1px solid red;
+        position: relative;
+        left:20px;
+        top: 20px;
+    }
+</style>
+<body>
+    <div class="first">first</div>
+    <!-- <div class="firstMove">firstMove</div> -->
+    <div class="second">second</div>
+</body>
+</html>
+<!--
+   Top的值表示对象相对原位置向下偏移的距离，bottom的值表示对象相对原位置向上偏移的距离，
+   两者同时存在时，只有Top起作用。
+
+　　left的值表示对象相对原位置向右偏移的距离，right的值表示对象相对原位置向左偏移的距离，
+    两者同时存在时，只有left起作用。
+-->
+<!--
+    相对定位相对的是它原本在文档流中的位置而进行的偏移，而我们也知道relative定位
+    也是遵循正常的文档流，它没有脱离文档流，但是它的top/left/right/bottom属性是生效的，
+    可以说它是static到absoult的一个中间过渡属性，最重要的是它还占有文档空间，
+    而且占据的文档空间不会随 top / right / left / bottom 等属性的偏移而发生变动，
+    也就是说它后面的元素是依据虚线位置( top / left / right / bottom 等属性生效之前)进行的定位，
+    这点一定要理解。
+-->

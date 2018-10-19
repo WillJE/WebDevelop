@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #first{ width: 200px;height: 100px;border: 1px solid red;position: relative;}
+    #second{ width: 200px;height: 100px;border: 1px solid blue;
+    position: absolute;top :0;left : 0;}
+    .out{
+        width:200px;
+        height: 100px;
+        border: 1px solid yellowgreen;
+        position: relative;
+        margin: 40px;
+        padding: 40px;
+    }
+    .in{
+        width:200px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+</style>
+<body>
+    <div id="first">relative</div>
+    <div id="second">absoulte</div>
+
+    <hr>
+    <br>
+    <br>
+    <div class="out">out
+        <div class="in">
+            in
+        </div>
+    </div>
+</body>
+</html>
+<!--
+    使用absolute定位的元素会脱离文档流
+    使用absoult定位的元素脱离文档流后，就只能根据祖先类元素(父类以上)进行定位，
+    而这个祖先类还必须是以postion非static方式定位的， 
+    举个例子，a元素使用absoulte定位，它会从父类开始找起，
+    寻找以position非static方式定位的祖先类元素(注意，一定要是直系祖先才算哦~），
+    直到<html>标签为止
+
+    这里还需要注意的是，relative和static方式在最外层时是以<body>标签为定位原点的，
+    而absoulte方式在无父级是position非static定位时是以<html>作为原点定位。
+    <html>和<body>元素相差9px左右。我们来看下效果：
+-->
